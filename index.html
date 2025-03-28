@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Productos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Logo en la esquina -->
+    <div class="logo">
+        <img src="mi-logo.png" alt="Mi Logo">
+    </div>
+
+    <!-- Espacio para el número de contacto -->
+    <div class="contact">
+        <p>Contáctanos al: <strong>+502 4178 8164</strong></p>
+    </div>
+
+    <!-- Galería de productos -->
+    <div class="gallery">
+        <div class="product" onclick="showModal('cappuccino.jpg', 'Cappuccino', 'Q10', 'Una bebida cremosa y deliciosa que se disfruta mejor fría.')">
+            <img src="cappuccino.jpg" alt="Cappuccino">
+            <h3> Cappuccino</h3>
+            <p>Q10</p>
+            <button class="whatsapp-btn" onclick="sendWhatsApp('Cappuccino')">
+                <img src="whatsapp-logo.png" alt="WhatsApp Logo">
+                Escribir por WhatsApp
+            </button>
+        </div>
+        <div class="product" onclick="showModal('milki_original.jpg', 'Milki Original', 'Q10', 'El clásico sabor fresco y suave que encanta a todos.')">
+            <img src="milki_original.jpg" alt="Milki Original">
+            <h3> Milki Original</h3>
+            <p>Q10</p>
+            <button class="whatsapp-btn" onclick="sendWhatsApp('Milki Original')">
+                <img src="whatsapp-logo.png" alt="WhatsApp Logo">
+                Escribir por WhatsApp
+            </button>
+        </div>
+        <div class="product" onclick="showModal('ice_talk.jpg', 'Ice Talk', 'Q7.50', 'Refrescante y ligera, perfecta para cualquier ocasión.')">
+            <img src="ice_talk.jpg" alt="Ice Talk">
+            <h3> Ice Talk</h3>
+            <p>Q7.50</p>
+            <button class="whatsapp-btn" onclick="sendWhatsApp('Ice Talk')">
+                <img src="whatsapp-logo.png" alt="WhatsApp Logo">
+                Escribir por WhatsApp
+            </button>
+        </div>
+        <div class="product" onclick="showModal('soyu_fresa.jpg', 'Soyu de Fresa', 'Q23.45', 'Una experiencia única con el sabor dulce de la fresa.')">
+            <img src="soyu_fresa.jpg" alt="Soyu de Fresa">
+            <h3> Soyu de Fresa</h3>
+            <p>Q23.45</p>
+            <button class="whatsapp-btn" onclick="sendWhatsApp('Soyu de Fresa')">
+                <img src="whatsapp-logo.png" alt="WhatsApp Logo">
+                Escribir por WhatsApp
+            </button>
+        </div>
+        <div class="product" onclick="showModal('cocopalm.jpg', 'Cocopalm', 'Q7.50', 'Frescura tropical en cada sorbo.')">
+            <img src="cocopalm.jpg" alt="Cocopalm">
+            <h3> Cocopalm</h3>
+            <p>Q7.50</p>
+            <button class="whatsapp-btn" onclick="sendWhatsApp('Cocopalm')">
+                <img src="whatsapp-logo.png" alt="WhatsApp Logo">
+                Escribir por WhatsApp
+            </button>
+        </div>
+        <div class="product" onclick="showModal('cocopalm_durazno.jpg', 'Cocopalm de Durazno', 'Q7.50', 'El toque suave y dulce del durazno tropical.')">
+            <img src="cocopalm_durazno.jpg" alt="Cocopalm de Durazno">
+            <h3> Cocopalm de Durazno</h3>
+            <p>Q7.50</p>
+            <button class="whatsapp-btn" onclick="sendWhatsApp('Cocopalm de Durazno')">
+                <img src="whatsapp-logo.png" alt="WhatsApp Logo">
+                Escribir por WhatsApp
+            </button>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">✖</span>
+            <div class="modal-details">
+                <img id="modal-image" src="" alt="Imagen del Producto">
+                <div class="details">
+                    <h2 id="modal-title"></h2>
+                    <p id="modal-price"></p>
+                    <p id="modal-description"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
